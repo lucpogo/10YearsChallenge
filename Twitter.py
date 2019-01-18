@@ -33,8 +33,8 @@ else:
     tweetsJSON = []
 
 def downloadPics(parametros):
+    tlen=0
     while tlen!=0:
-    for i in range(0,5):
         time.sleep(5)
         newTweets = api.search(**parametros)
         tlen = len(newTweets)
