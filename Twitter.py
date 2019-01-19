@@ -5,7 +5,7 @@ import tweepy
 from tweepy import OAuthHandler
 import json
 import time
-import urllib
+import urllib.request
 import os
 
 with open('config.json') as f:
@@ -54,3 +54,4 @@ downloadPics(parametros)
 with open(os.path.join('files','twitter','Tweets.json'),'wt') as f:
     json.dump(tweetsJSON,f,indent=2)
 
+print("Fin del Proceso")
